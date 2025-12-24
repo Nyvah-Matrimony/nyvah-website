@@ -1,0 +1,457 @@
+:root {
+  --red: #480015;
+  --pink: #ffe9ec;
+  --text-dark: #040404;
+  --text-light: #ffedf0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: var(--text-dark);
+  background-color: var(--pink);
+}
+
+body {
+  min-height: 100vh;
+}
+
+.page {
+  background-color: var(--pink);
+  color: var(--text-dark);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  min-height: 90vh;
+  color: white;
+}
+
+.hero::after {
+  /* No overlay so the original image brightness is preserved */
+  content: none;
+}
+
+.hero-image {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.5rem 8vw;
+  color: #ffedf0;
+}
+
+.logo-text {
+  font-family: "Borel", cursive;
+  font-size: 2.2rem;
+  color: #480015;
+}
+
+.hero-logo {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.95rem;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.hero-tagline {
+  font-family: "Borel", cursive;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: #ffedf0;
+}
+
+/* Sections */
+
+.section {
+  padding: 150px 0;
+}
+
+.section-light {
+  background-color: var(--pink);
+  color: var(--text-dark);
+}
+
+.section-dark {
+  background-color: var(--red);
+  color: var(--text-light);
+}
+
+.section-inner {
+  max-width: none;
+  margin: 0;
+  padding: 0 100px;
+}
+
+.section-inner-center {
+  text-align: center;
+}
+
+.section h2 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  line-height: 1.2;
+}
+
+/* Specific heading size for first section */
+.intro h2 {
+  font-size: 58px;
+  margin-bottom: 90px;
+}
+
+/* Heading size for limited matches section */
+.limited-matches h2 {
+  font-size: 58px;
+  margin-bottom: 90px;
+  text-align: right;
+  margin-left: auto;
+}
+
+/* Heading size for photos section */
+.photos h2 {
+  font-size: 58px;
+  margin-bottom: 90px;
+}
+
+/* Heading size for safety section */
+.safety h2 {
+  font-size: 58px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 90px;
+}
+
+.accent {
+  color: var(--red);
+}
+
+.section-dark .accent {
+  color: var(--text-light);
+}
+
+.section-eyebrow {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 1.25rem;
+}
+
+/* Eyebrow in the first section ("With nyvah") */
+.intro .section-eyebrow {
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.body-text {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.body-text-wide {
+  max-width: 480px;
+}
+
+.body-text-narrow {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.photos .section-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* First content section positioning */
+
+.intro .section-inner {
+}
+
+/* Second (dark) section fixed height */
+.limited-matches {
+  min-height: 600px;
+}
+
+/* Body copy in first section */
+.intro .body-text {
+  font-size: 24px;
+  line-height: 1.6;
+  text-align: right;
+  margin-left: auto;
+  max-width: 620px;
+}
+
+/* Body copy in limited matches section */
+.limited-matches .body-text {
+  font-size: 24px;
+  line-height: 1.6;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+  max-width: 620px; /* aim for ~4 lines at this size */
+}
+
+/* Body copy in photos section */
+.photos .body-text {
+  font-size: 24px;
+  line-height: 1.6;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 620px; /* aim for ~4 lines at this size */
+}
+
+/* Body copy in safety section */
+.safety .body-text {
+  font-size: 24px;
+  line-height: 1.6;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Contact */
+
+.contact-form {
+  margin-top: 2.5rem;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.field-label {
+  font-size: 0.9rem;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 4px;
+  border: 1px solid #d6b6bc;
+  background-color: #ffeef1;
+  color: var(--text-dark);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--red);
+  outline-offset: 1px;
+}
+
+.button-primary {
+  align-self: center;
+  margin-top: 0.5rem;
+  padding: 0.7rem 4.5rem;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--red);
+  color: var(--text-light);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.button-primary:hover {
+  opacity: 0.95;
+}
+
+/* Footer */
+
+.footer {
+  /* Use provided footer image placed at /public/footer.jpg */
+  background-color: var(--red);
+  background-image: url("/footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--text-light);
+  padding: 3rem 8vw 1.5rem;
+}
+
+.footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 100%;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-logo {
+  font-family: "Borel", cursive;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-logo-small {
+  font-family: "Borel", cursive;
+  font-size: 1.4rem;
+  margin-top: 0.75rem;
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.85rem;
+}
+
+.footer-links.secondary {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  gap: 16px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.footer-social .social-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .nav {
+    padding-inline: 1.5rem;
+  }
+
+  .nav-links {
+    gap: 1.25rem;
+    font-size: 0.85rem;
+  }
+
+  .section {
+    padding-inline: 1.5rem;
+  }
+
+  .body-text-wide {
+    max-width: 100%;
+  }
+
+  .footer-inner {
+    align-items: flex-start;
+  }
+
+  .footer-right {
+    align-items: flex-start;
+  }
+}
+
+
