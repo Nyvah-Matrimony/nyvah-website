@@ -122,19 +122,14 @@ function App() {
             <div className="footer-bottom">
               <div className="footer-copy">All rights reserved</div>
               <div className="footer-social">
-                <a href="#instagram" aria-label="Instagram" className="social-icon">
+                <a href="https://www.instagram.com/nyvah.in/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-icon">
                   <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm11.25 1.25a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0ZM12 8.5A3.5 3.5 0 1 1 8.5 12A3.5 3.5 0 0 1 12 8.5Zm0 2a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 12 10.5Z" />
                   </svg>
                 </a>
-                <a href="#linkedin" aria-label="LinkedIn" className="social-icon">
+                <a href="https://www.linkedin.com/company/nyvah/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-icon">
                   <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M19 3A2.99 2.99 0 0 1 22 6v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h14ZM7.35 10.01H5.16V18h2.19v-7.99Zm.2-2.83a1.29 1.29 0 0 0-1.32-1.29a1.3 1.3 0 1 0 .01 2.59a1.29 1.29 0 0 0 1.31-1.3ZM18 18v-4.6c0-2.47-1.32-3.61-3.07-3.61a2.66 2.66 0 0 0-2.38 1.32h-.05V10h-2.2V18h2.19v-4.33c0-1.14.22-2.24 1.63-2.24c1.39 0 1.41 1.3 1.41 2.32V18H18Z" />
-                  </svg>
-                </a>
-                <a href="#twitter" aria-label="Twitter" className="social-icon">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M19.9 7.72c.01.17.01.34.01.51c0 5.2-3.95 11.2-11.2 11.2c-2.23 0-4.3-.65-6.05-1.77c.31.04.63.06.95.06c1.85 0 3.55-.63 4.9-1.69a3.95 3.95 0 0 1-3.69-2.74c.24.05.49.07.75.07c.36 0 .72-.05 1.05-.14A3.94 3.94 0 0 1 2.8 9.25v-.05c.54.3 1.16.48 1.82.5A3.94 3.94 0 0 1 2.94 5.7c0-.72.2-1.4.55-1.98a11.2 11.2 0 0 0 8.12 4.12a3.95 3.95 0 0 1 6.73-3.6a7.8 7.8 0 0 0 2.5-.95a3.97 3.97 0 0 1-1.73 2.18a7.9 7.9 0 0 0 2.27-.62a8.5 8.5 0 0 1-1.98 2.09Z" />
                   </svg>
                 </a>
               </div>
@@ -153,19 +148,14 @@ function App() {
                 <a href="#privacy">Privacy policy</a>
               </div>
               <div className="footer-social footer-social-right">
-                <a href="#instagram" aria-label="Instagram" className="social-icon">
+                <a href="https://www.instagram.com/nyvah.in/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-icon">
                   <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm11.25 1.25a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0ZM12 8.5A3.5 3.5 0 1 1 8.5 12A3.5 3.5 0 0 1 12 8.5Zm0 2a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 12 10.5Z" />
                   </svg>
                 </a>
-                <a href="#linkedin" aria-label="LinkedIn" className="social-icon">
+                <a href="https://www.linkedin.com/company/nyvah/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-icon">
                   <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M19 3A2.99 2.99 0 0 1 22 6v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h14ZM7.35 10.01H5.16V18h2.19v-7.99Zm.2-2.83a1.29 1.29 0 0 0-1.32-1.29a1.3 1.3 0 1 0 .01 2.59a1.29 1.29 0 0 0 1.31-1.3ZM18 18v-4.6c0-2.47-1.32-3.61-3.07-3.61a2.66 2.66 0 0 0-2.38 1.32h-.05V10h-2.2V18h2.19v-4.33c0-1.14.22-2.24 1.63-2.24c1.39 0 1.41 1.3 1.41 2.32V18H18Z" />
-                  </svg>
-                </a>
-                <a href="#twitter" aria-label="Twitter" className="social-icon">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M19.9 7.72c.01.17.01.34.01.51c0 5.2-3.95 11.2-11.2 11.2c-2.23 0-4.3-.65-6.05-1.77c.31.04.63.06.95.06c1.85 0 3.55-.63 4.9-1.69a3.95 3.95 0 0 1-3.69-2.74c.24.05.49.07.75.07c.36 0 .72-.05 1.05-.14A3.94 3.94 0 0 1 2.8 9.25v-.05c.54.3 1.16.48 1.82.5A3.94 3.94 0 0 1 2.94 5.7c0-.72.2-1.4.55-1.98a11.2 11.2 0 0 0 8.12 4.12a3.95 3.95 0 0 1 6.73-3.6a7.8 7.8 0 0 0 2.5-.95a3.97 3.97 0 0 1-1.73 2.18a7.9 7.9 0 0 0 2.27-.62a8.5 8.5 0 0 1-1.98 2.09Z" />
                   </svg>
                 </a>
               </div>
