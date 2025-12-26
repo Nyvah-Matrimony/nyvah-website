@@ -121,18 +121,6 @@ function App() {
             <div className="footer-logo">nyvah</div>
             <div className="footer-bottom">
               <div className="footer-copy">All rights reserved</div>
-              <div className="footer-social">
-                <a href="https://www.instagram.com/nyvah.in/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-icon">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm11.25 1.25a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0ZM12 8.5A3.5 3.5 0 1 1 8.5 12A3.5 3.5 0 0 1 12 8.5Zm0 2a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 12 10.5Z" />
-                  </svg>
-                </a>
-                <a href="https://www.linkedin.com/company/nyvah/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-icon">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M19 3A2.99 2.99 0 0 1 22 6v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h14ZM7.35 10.01H5.16V18h2.19v-7.99Zm.2-2.83a1.29 1.29 0 0 0-1.32-1.29a1.3 1.3 0 1 0 .01 2.59a1.29 1.29 0 0 0 1.31-1.3ZM18 18v-4.6c0-2.47-1.32-3.61-3.07-3.61a2.66 2.66 0 0 0-2.38 1.32h-.05V10h-2.2V18h2.19v-4.33c0-1.14.22-2.24 1.63-2.24c1.39 0 1.41 1.3 1.41 2.32V18H18Z" />
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
           <div className="footer-right">
