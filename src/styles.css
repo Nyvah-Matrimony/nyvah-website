@@ -93,6 +93,13 @@ a:hover {
   font-size: 0.95rem;
 }
 
+.nav-links a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
 .hero-overlay {
   position: absolute;
   top: 350px;
@@ -220,8 +227,7 @@ a:hover {
 
 /* First content section positioning */
 
-.intro .section-inner {
-}
+.intro .section-inner {}
 
 /* Second (dark) section fixed height */
 .limited-matches {
@@ -244,7 +250,8 @@ a:hover {
   text-align: left;
   margin-left: 0;
   margin-right: auto;
-  max-width: 620px; /* aim for ~4 lines at this size */
+  max-width: 620px;
+  /* aim for ~4 lines at this size */
 }
 
 /* Body copy in photos section */
@@ -254,7 +261,8 @@ a:hover {
   text-align: right;
   margin-left: auto;
   margin-right: 0;
-  max-width: 620px; /* aim for ~4 lines at this size */
+  max-width: 620px;
+  /* aim for ~4 lines at this size */
 }
 
 /* Body copy in safety section */
@@ -387,7 +395,14 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 0.75rem;
+  gap: 0;
+}
+
+.footer-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
 }
 
 .footer-links {
@@ -411,6 +426,10 @@ textarea:focus {
   margin-top: 0;
 }
 
+.footer-social-right {
+  margin-left: 0;
+}
+
 .footer-social .social-icon svg {
   width: 18px;
   height: 18px;
@@ -427,9 +446,41 @@ textarea:focus {
 
 /* Responsive */
 
+/* Tablet: 769px - 1024px */
+@media (max-width: 1024px) {
+  .section-inner {
+    padding: 0 60px;
+  }
+}
+
+/* Tablet and below: max-width 768px */
 @media (max-width: 768px) {
+
+  /* Hero Section */
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero-image {
+    height: 70vh;
+  }
+
+  .hero-logo {
+    top: 100px;
+    font-size: 1.8rem;
+  }
+
+  .hero-overlay {
+    top: 250px;
+  }
+
+  .hero-tagline {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  /* Navigation */
   .nav {
-    padding-inline: 1.5rem;
+    padding: 1rem 1.5rem;
   }
 
   .nav-links {
@@ -437,21 +488,215 @@ textarea:focus {
     font-size: 0.85rem;
   }
 
+  /* Sections */
   .section {
-    padding-inline: 1.5rem;
+    padding: 80px 0;
   }
 
-  .body-text-wide {
+  .section-inner {
+    padding: 0 40px;
+  }
+
+  /* Typography - Headings */
+  .intro h2,
+  .limited-matches h2,
+  .photos h2,
+  .safety h2 {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+  /* Typography - Body Text */
+  .intro .body-text,
+  .limited-matches .body-text,
+  .photos .body-text,
+  .safety .body-text {
+    font-size: 18px;
+  }
+
+  /* Typography - Eyebrow */
+  .intro .section-eyebrow {
+    font-size: 18px;
+  }
+
+  /* Text Alignment - Center on tablet */
+  .limited-matches h2,
+  .safety h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro .body-text,
+  .limited-matches .body-text,
+  .photos .body-text,
+  .safety .body-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Section Heights */
+  .limited-matches {
+    min-height: auto;
+  }
+
+  /* Body Text Widths */
+  .body-text-wide,
+  .intro .body-text,
+  .limited-matches .body-text,
+  .photos .body-text,
+  .safety .body-text {
     max-width: 100%;
   }
 
+  /* Contact Form */
+  .contact-form {
+    max-width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+
   .footer-inner {
+    flex-direction: column;
     align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .footer-left {
+    width: 100%;
   }
 
   .footer-right {
+    width: 100%;
     align-items: flex-start;
+  }
+
+  .footer-links-container {
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .footer-social {
+    margin-left: 0;
   }
 }
 
+/* Mobile: max-width 480px */
+@media (max-width: 480px) {
 
+  /* Hero Section */
+  .hero {
+    min-height: 60vh;
+  }
+
+  .hero-image {
+    height: 60vh;
+  }
+
+  .hero-logo {
+    top: 80px;
+    font-size: 1.5rem;
+  }
+
+  .hero-overlay {
+    top: 200px;
+  }
+
+  .hero-tagline {
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
+  }
+
+  /* Navigation */
+  .nav {
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  /* Sections */
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-inner {
+    padding: 0 20px;
+  }
+
+  /* Typography - Headings */
+  .intro h2,
+  .limited-matches h2,
+  .photos h2,
+  .safety h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    line-height: 1.3;
+  }
+
+  /* Typography - Body Text */
+  .intro .body-text,
+  .limited-matches .body-text,
+  .photos .body-text,
+  .safety .body-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Typography - Eyebrow */
+  .intro .section-eyebrow {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  /* Contact Form */
+  .contact-form {
+    gap: 1.25rem;
+  }
+
+  .button-primary {
+    padding: 0.7rem 3rem;
+    font-size: 0.85rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 1.5rem 1rem 1rem;
+  }
+
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .footer-links.secondary {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .footer-social {
+    gap: 12px;
+  }
+
+  .footer-social .social-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+}
